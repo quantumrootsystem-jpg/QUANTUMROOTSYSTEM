@@ -1,0 +1,260 @@
+/* ===========================
+   GLOBAL CORPORATE THEME
+=========================== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #14213d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;  
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    flex-wrap: wrap;}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+    
+.navbar-right {
+
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+.navbar img {
+    height: 55px;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #fca311;
+}
+
+/* Mobile nav */
+@media(max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* ===========================
+   IMAGE SLIDER
+=========================== */
+.slide.active {
+    display: block;
+}
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 450px;
+    display: none;
+    animation: fade 1.2s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+@keyframes fade {
+    from { opacity: 0.5; }
+    to   { opacity: 1;   }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.7);
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.dots {
+    text-align: center;
+    padding: 12px 0;
+    background: white;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background: #bbb;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active-dot {
+    background: #14213d;
+}
+
+/* ===========================
+   SECTION STANDARD
+=========================== */
+.section {
+    padding: 70px 15%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 38px;
+    color: #14213d;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   MISSION & VISION
+=========================== */
+.mv-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mv-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   TEAM SECTION
+=========================== */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-box {
+    width: 240px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   STAT COUNTERS
+=========================== */
+.counter-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.counter-box {
+    background: #14213d;
+    padding: 30px;
+    color: white;
+    width: 180px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 26px;
+}
+
+/* ===========================
+   TESTIMONIALS
+=========================== */
+.testimonial-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: auto;
+    width: 70%;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   CONTACT FORM
+=========================== */
+form {
+    max-width: 550px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 14px 25px;
+    border: none;
+    font-size: 17px;
+    background: #14213d;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0d1b2a;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+    background: #0d1b2a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
