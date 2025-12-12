@@ -30,6 +30,7 @@ body {
     gap: 10px;
 }
     
+
 .navbar-right {
 
     flex: 2;
@@ -258,3 +259,6 @@ button:hover {
     padding: 20px;
     text-align: center;
 }
+
+img { max-width: 100%; height: auto; }
+.section { padding: 60px 5%; }
