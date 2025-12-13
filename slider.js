@@ -24,7 +24,7 @@ function prevSlide() {
   showSlide(current);
 }
 
-// Button events
+// Button events QRS
 document.querySelector(".next").addEventListener("click", nextSlide);
 document.querySelector(".prev").addEventListener("click", prevSlide);
 

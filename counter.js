@@ -1,3 +1,4 @@
+// Counter QRS
 const counters = document.querySelectorAll(".counter");
 const speed = 150;
 
