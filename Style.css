@@ -40,9 +40,13 @@ body {
     flex-wrap: wrap;
     }
 
-.navbar img {
+/*.navbar img {
     height: 55px;
-}
+}*/
+
+
+img { max-width: 100%; height: auto; }
+.section { padding: 60px 5%; }
 
 .navbar a {
     color: white;
@@ -272,6 +276,3 @@ button:hover {
     padding: 20px;
     text-align: center;
 }
-
-img { max-width: 100%; height: auto; }
-.section { padding: 60px 5%; }
