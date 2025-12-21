@@ -12,6 +12,10 @@ body {
    NAVBAR
 =========================== */
 .navbar {
+    height: 80px;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,7 +99,7 @@ img { max-width: 100%; height: auto; }
 
 
 /* Mobile nav */
-@media(max-width: 600px) {
+@media(max-width: 1020px) {
     .navbar {
         flex-direction: column;
         gap: 15px;
