@@ -13,6 +13,7 @@ body {
 =========================== */
 .navbar {
     height: 80px;
+    padding: 0 40px;
 }
 
 .navbar {
@@ -29,10 +30,14 @@ body {
     flex-wrap: nowrap;}
 
 .navbar-left {
+    height:100%;
+    align-items: center;
+}
+    /*.navbar-left {
     display: flex;
     align-items: center;
     gap: 10px;
-}
+}*/
     
 
 .navbar-right {
@@ -58,9 +63,11 @@ body {
     height: 55px;
     max-height: 55px;
     width: auto;
-    max-width: 100px;
+    max-width: 140px;
     display: block;
-    object-fit: contain; }
+    object-fit: contain;
+overflow:hidden;
+ }
 
 /*.logo {
     height: 55px;
