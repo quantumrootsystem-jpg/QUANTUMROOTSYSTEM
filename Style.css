@@ -11,16 +11,13 @@ body {
 /* ===========================
    NAVBAR
 =========================== */
-/*.navbar {
-    height: 80px;
-    padding: 0 40px;
-}*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    padding: 0 40px;
+    padding: 0 10px;
     background: #0f1f3d;
 }
   
@@ -107,9 +104,9 @@ body {
     /*.navbar img {
     height: 55px;
 }*/
-
+/*
 img { max-width: 100%; height: auto; }
-.section { padding: 60px 5%; }
+.section { padding: 60px 5%; }*/
 
 /* Mobile nav */
 @media(max-width: 1020px) {
@@ -196,16 +193,21 @@ img { max-width: 100%; height: auto; }
    SECTION STANDARD
 =========================== */
 .section {
-    padding: 70px 15%;
+    padding: 5px 15%;
     text-align: center;
 }
 
 .section h2 {
     font-size: 38px;
     color: #14213d;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
+.section h3 {
+    font-size: 18px;
+    color: #eff1f5;
+    margin-bottom: 5px;
+}
 /* ===========================
    MISSION & VISION
 =========================== */
@@ -217,10 +219,12 @@ img { max-width: 100%; height: auto; }
 }
 
 .mv-box {
-    background: white;
+    /*background: white;*/
+    background: #14213d;
     padding: 25px;
     border-radius: 12px;
     width: 350px;
+    color: #eff1f5;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -236,11 +240,12 @@ img { max-width: 100%; height: auto; }
 
 .team-box {
     width: 240px;
-    background: white;
+    background: #14213d;
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #eff1f5;
+    box-shadow: 0 5px 15px hsla(271, 35%, 45%, 0.1);
 }
 
 /* ===========================
@@ -257,12 +262,13 @@ img { max-width: 100%; height: auto; }
     background: #14213d;
     padding: 30px;
     color: white;
-    width: 180px;
-    min-height: 180px;
+    width: 250px;
+    min-height: 120px;
     border-radius: 12px;
     text-align: center;
     font-size: 26px;
 }
+
 
 /* ===========================
    TESTIMONIALS
