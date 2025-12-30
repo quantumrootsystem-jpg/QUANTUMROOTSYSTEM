@@ -322,9 +322,9 @@ img { max-width: 100%; height: auto; }
     transition: background-color 0.3s, color 0.3s;
 }
 .btn:hover {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    background-color: #9ebbda;
+    color: #3f1292;
+    border: 2px solid #120392;
 }
 
 /* ===========================
