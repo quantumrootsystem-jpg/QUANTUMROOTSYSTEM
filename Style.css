@@ -208,6 +208,12 @@ img { max-width: 100%; height: auto; }
     color: #eff1f5;
     margin-bottom: 5px;
 }
+
+.section h4 {
+    font-size: 20px;
+    color: #14213d;
+    margin-bottom: 8px;
+}
 /* ===========================
    MISSION & VISION
 =========================== */
@@ -234,7 +240,7 @@ img { max-width: 100%; height: auto; }
 .team-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -269,6 +275,57 @@ img { max-width: 100%; height: auto; }
     font-size: 26px;
 }
 
+.careers-container {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.career-box{
+    margin-top: 0;
+    margin-bottom: 12px;
+    width: 700px;
+    background: #14213d;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    color: #eff1f5;
+    box-shadow: 0 5px 15px hsla(271, 35%, 45%, 0.1);
+}
+
+/* Position title INSIDE box, top center */
+.position-title {
+    position: fixed;
+    top: 5px;                        /* inside the box */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: 200;
+    color: #ffffff;
+    /*width: fit-content; 
+    height:auto;
+    margin: 0;
+    padding: 0;
+    line-height: 1;*/
+}
+
+.btn
+{
+    background-color: #ffffff;
+    color: #14213d;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+     display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
 
 /* ===========================
    TESTIMONIALS
@@ -314,11 +371,73 @@ button:hover {
     background: #0d1b2a;
 }
 
+.apply-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* LABELS */
+.apply-container label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    display: block;
+    font-weight: 600;
+}
+
+/* INPUTS, TEXTAREA, SELECT */
+.apply-container input,
+.apply-container textarea,
+.apply-container select {
+    width: 100%;
+    height: 36px;          /* slim height */
+    padding: 6px 10px;
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+/* TEXTAREA SPECIAL */
+.apply-container textarea {
+    height: 80px;
+}
+
+/* FILE INPUT */
+.apply-container input[type="file"] {
+    height: auto;
+    padding: 4px;
+    font-size: 13px;
+}
+
+/* BUTTON */
+.apply-container button {
+    width: 100%;
+    padding: 10px;
+    background: #0f1f3d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* BUTTON HOVER */
+.apply-container button:hover {
+    background: #0056b3;
+}
+
+
 /* ===========================
    FOOTER
 =========================== */
 .footer {
-    background: #0d1b2a;
+    background: #0f1f3d;
     color: white;
     padding: 20px;
     text-align: center;

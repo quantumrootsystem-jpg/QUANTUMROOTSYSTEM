@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job - QuantumRoot System Private Limited</title>
+    <link rel="stylesheet" href="Style.css?v=1">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar"> 
+    <div class="navbar-left"> 
+        <img src="images/QRS.png" alt="Company Logo" class = "logo">        
+     <span class="company-name">QuantumRoot System Private Limited</span>
+</div>        
+    <div class="navbar-right"> 
+        
+        <a href="index.html">Home</a>                                                                                     
+        <a href="about.html" >About</a>
+        <a href="services.html">Services</a>
+		<a href="careers.html"  class="active">Careers</a>
+        <a href="blog.html">Blog</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+</nav>
+    
+<!----
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+        .apply-container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+        }
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style> -->
+
+<body>
+
+                <div class="apply-container">
+                    <h2 align="center">Job Application</h2>
+
+                    <form action="submit.php" method="post" enctype="multipart/form-data">
+                        
+                        <div class="form-row">
+                        <label for="position">Position</label>
+                        <select id="position" name="position" required>
+                        <option value="">-- Select Position --</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="UI/UX Designer">UI/UX Designer</option>
+                        <option value="QA Engineer">QA Engineer</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="mobile">Mobile</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="resume">Resume</label>
+                    <input type="file" id="resume" name="resume" required>
+                </div>
+
+                <button type="submit">Submit Application</button>
+
+        
+    </form>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("position").value = params.get("position");
+</script>
+
+</body>
+</html>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 QuantumRoot System Private Limited. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
